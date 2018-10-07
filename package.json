@@ -1,9 +1,10 @@
 {
-  "name": "gatsby-starter-default",
-  "description": "Gatsby default starter",
+  "name": "mjez29.github.io",
+  "description": "Michal Jez's personal website",
   "version": "1.0.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Michal Jez <michal.g.jez@gmail.com>",
   "dependencies": {
+    "d3-shape": "^1.2.2",
     "gatsby": "^2.0.0",
     "gatsby-plugin-manifest": "^2.0.2",
     "gatsby-plugin-offline": "^2.0.5",
@@ -13,7 +14,9 @@
     "react-helmet": "^5.2.0"
   },
   "keywords": [
-    "gatsby"
+    "gatsby",
+    "michal",
+    "jez"
   ],
   "license": "MIT",
   "scripts": {
