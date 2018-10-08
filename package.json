@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "author": "Michal Jez <michal.g.jez@gmail.com>",
   "dependencies": {
+    "d3": "^5.7.0",
     "d3-shape": "^1.2.2",
     "gatsby": "^2.0.0",
     "gatsby-plugin-manifest": "^2.0.2",
@@ -11,7 +12,8 @@
     "gatsby-plugin-react-helmet": "^3.0.0",
     "react": "^16.5.1",
     "react-dom": "^16.5.1",
-    "react-helmet": "^5.2.0"
+    "react-helmet": "^5.2.0",
+    "victory": "^30.5.0"
   },
   "keywords": [
     "gatsby",
