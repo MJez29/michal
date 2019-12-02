@@ -1,5 +1,6 @@
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
+import { LinkedinIcon, GithubIcon, ResumeIcon, EmailIcon } from '../Icon';
 
 const Animation = keyframes`
   0% {
@@ -61,13 +62,10 @@ const Home = () => {
     <Container>
       <Header>Hey, I'm Michal</Header>
       <div>
-        <Link href="https://linkedin.com/in/michal-jez" target="_blank">
-        <Icon icon={faLinkedinIn} />
-        </Link>
-
-        <Link href="https://github.com/MJez29" target="_blank"><Icon icon={faGithub} /></Link>
-        <Link href="mailto:michal.g.jez@gmail.com"><Icon icon={faEnvelope} /></Link>
-        <Link href="/"><Icon icon={faFile} /></Link>
+        <LinkedinIcon />
+        <GithubIcon />
+        <EmailIcon />
+        <ResumeIcon />
       </div>
       {/* <Button>Here's my story</Button> */}
     </Container>
