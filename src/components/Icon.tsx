@@ -1,16 +1,14 @@
-import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLinkedinIn, faGithub } from '@fortawesome/free-brands-svg-icons'
-import { faEnvelope, faFile} from '@fortawesome/free-solid-svg-icons'
-import styled from 'styled-components';
-import { IconProp } from '@fortawesome/fontawesome-svg-core';
-
+import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLinkedinIn, faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope, faFile } from "@fortawesome/free-solid-svg-icons";
+import styled from "styled-components";
+import { IconProp } from "@fortawesome/fontawesome-svg-core";
 
 const IconSvg = styled(FontAwesomeIcon)`
   font-size: 24px;
   transition: transform 0.2s ease;
 `;
-
 
 const Link = styled.a`
   color: black;
@@ -33,7 +31,8 @@ const Link = styled.a`
     background-color: black;
   }
 
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     ::after {
       left: 0;
       right: 0;
@@ -48,15 +47,21 @@ interface Props {
 }
 
 export const Icon: React.FC<Props> = ({ to, newTab, icon }) => (
-  <Link href={to} target={newTab ? '_blank' : undefined}>
+  <Link href={to} target={newTab ? "_blank" : undefined}>
     <IconSvg icon={icon} />
   </Link>
 );
 
-export const GithubIcon = () => <Icon to="https://github.com/MJez29" newTab icon={faGithub} />;
+export const GithubIcon = () => (
+  <Icon to="https://github.com/MJez29" newTab icon={faGithub} />
+);
 
-export const LinkedinIcon = () => <Icon to="https://linkedin.com/in/michal-jez" newTab icon={faLinkedinIn} />;
+export const LinkedinIcon = () => (
+  <Icon to="https://linkedin.com/in/michal-jez" newTab icon={faLinkedinIn} />
+);
 
-export const EmailIcon = () => <Icon to="mailto:michal.g.jez@gmail.com" icon={faEnvelope} />;
+export const EmailIcon = () => (
+  <Icon to="mailto:michal.g.jez@gmail.com" icon={faEnvelope} />
+);
 
 export const ResumeIcon = () => <Icon to="/" newTab icon={faFile} />;

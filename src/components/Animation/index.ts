@@ -1,8 +1,9 @@
-import React from 'react';
+/* eslint-disable */
+import React from "react";
 
 // export const Animated: React.FC = ({ children }) => {
 //   return (
-    
+
 //   )
 // }
 

@@ -1,7 +1,7 @@
 export interface Story {
   title: React.ReactNode;
   body: React.ReactNode;
-  connections: StoryConnection[]
+  connections: StoryConnection[];
 }
 
 interface StoryConnection {
