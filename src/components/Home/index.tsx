@@ -1,6 +1,8 @@
 import React from "react";
-import styled, { keyframes } from "styled-components";
-import { LinkedinIcon, GithubIcon, ResumeIcon, EmailIcon } from "../Icon";
+import styled, { keyframes, css } from "styled-components";
+import { Icon } from "../Icon";
+import { faLinkedinIn, faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope, faFile } from "@fortawesome/free-solid-svg-icons";
 
 const Animation = keyframes`
   0% {
@@ -12,6 +14,11 @@ const Animation = keyframes`
     opacity: 1;
     transform: translateY(0);
   }
+`;
+
+const animation = css`
+  animation: ${Animation} 0.5s;
+  animation-fill-mode: both;
 `;
 
 const Container = styled.div`
@@ -57,13 +64,49 @@ const Header = styled.h1`
 //   }
 // `;
 
+const GithubIcon = styled(Icon).attrs({
+  to: "https://github.com/MJez29",
+  newTab: true,
+  icon: faGithub
+})`
+  ${animation};
+  animation-delay: 1.1s;
+`;
+
+const LinkedinIcon = styled(Icon).attrs({
+  to: "https://linkedin.com/in/michal-jez",
+  newTab: true,
+  icon: faLinkedinIn
+})`
+  ${animation};
+  animation-delay: 1.2s;
+`;
+
+const EmailIcon = styled(Icon).attrs({
+  to: "mailto:michal.g.jez@gmail.com",
+  newTab: true,
+  icon: faEnvelope
+})`
+  ${animation};
+  animation-delay: 1.3s;
+`;
+
+const ResumeIcon = styled(Icon).attrs({
+  to: "#",
+  newTab: true,
+  icon: faFile
+})`
+  ${animation};
+  animation-delay: 1.4s;
+`;
+
 const Home = () => {
   return (
     <Container>
       <Header>Hey, I'm Michal</Header>
       <div>
-        <LinkedinIcon />
         <GithubIcon />
+        <LinkedinIcon />
         <EmailIcon />
         <ResumeIcon />
       </div>
