@@ -92,7 +92,7 @@ const EmailIcon = styled(Icon).attrs({
 `;
 
 const ResumeIcon = styled(Icon).attrs({
-  to: "#",
+  to: "/michal-jez.pdf",
   newTab: true,
   icon: faFile
 })`
